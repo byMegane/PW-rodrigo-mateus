@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex1</title>
+    <style>
+        /* configurações globais */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 16px; /*Base para o cálculo de 'em' */
+            background-color: #0b0e14; /* cor estilo gamer */
+            color: #ffffff;
+        }
+
+        /* 1. Uso de VH e VW: O Header ocupa 70% da altura da tela e 100% da largura */
+        header {
+            width: 100vw;
+            height: 70vh;
+            /* Uso de background moderno com gradiente e imagem */
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(138, 43, 226, 0.4));
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            border-bottom: 8px solid #8a2be2; /*borda moderna */
+        }
+
+        header h1 {
+            font-size: 5em; /*Tamanho gigante relativo à fonte do body*/
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            text-shadow: 3px 3px 10px #000;
+        }
+
+        header p {
+            font-size: 1.5em;
+            margin-top: 10px;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 0.5em 1em;
+        }
+
+        /*2. Uso de %: Container centralizado para o conteúdo*/
+        .main-content {
+            width: 90%;
+            max-width: 1200px;
+            margin: -50px auto 2em auto; /* Sobe um pouco para sobrepor o header*/
+            background-color: #1a1f29;
+            padding: 3em;
+            border-radius: 15px;
+            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5);
+            position: relative;
+        }
+
+        /*3. uso de Float e Width em %: Organização dos Cards */
+        .game-card {
+            width: 46%;
+            margin: 2%;
+            float: left;
+            background: #252a35;
+            border: 1px solid #3d4451;
+            padding: 1.5em;
+            border-radius: 8px;
+            height: 450px; /*Altura fixa para os alunos testarem transbordando */
+        }
+
+        
+    </style>
+</head>
+<body>
+    
+</body>
+</html>

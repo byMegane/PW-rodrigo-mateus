@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio HTML5 Moderno</title>
+
+    <style>
+        /* substituimos as tags <font>, <basefont>, e atributos 'color', 'size', 'face' */
+        body {
+            font-family: Arial, sans-serif;
+            color: #333333;
+            line-height: 1.6;
+            margin: 40px auto; /* o auto é pra centralizar em telas grandes */
+            max-width: 800px; /* Limita a largura da Pagina */
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            font-weight: bold;
+        }
+
+        .lista-quadrada {
+            list-style-type: square;
+        }
+
+        .linha-divisoria {
+            border: 0;
+            border-top: 2px solid #007BFF;
+            margin: 30px;
+        }
+
+        figcaption {
+            font-size: 0.9em;
+            color: #666;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    
+    <header>
+        <h1>Meu artigo moderno</h1>
+        <nav>
+            <a href="#conclusao">Pular direto para a conclusão</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>O que aprendemos hoje?</h2>
+            <p>O HTML5 é focado na <strong>semântica</strong>. Deixamos a apresentação visual para o CSS</p>
+
+            <ul class="lista-quadrada">
+                <li>Estrutura limpa</li>
+                <li>CSS para o virtual</li>
+                <li>Acessibilidade melhorada</li>
+            </ul>
+        </section>
+
+        <hr class="linha-divisoria">
+
+        <section>
+            <h2>Um exemplo de Imagem</h2>
+            <figure>
+                <img src="https://i.redd.it/6v9jcii5wu8c1.jpeg" alt="Gojo burro">
+                <figcaption>Figura 1: exemplo de uma imagem com legenda estruturada corretamente no HTML5</figcaption>
+            </figure>
+        </section>
+
+        <section>
+
+            <section id="conclusao">
+                <h2>Conclusão</h2>
+                <p>A web ficou muito mais organizada e melhor ne?</p>
+
+                <p>Quer saber mais? <a href="https://www.google.com.br" target="_blank">Busque no Google</a>.</p>
+            </section>
+        </section>
+    </main>
+    <footer>
+        Nome do aluno: Rodrigo Mateus Alvarenga Silva - Camargo Aranha - 2026
+    </footer>
+</body>
+</html>

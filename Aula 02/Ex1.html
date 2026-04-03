@@ -41,6 +41,16 @@
             color: #666;
             font-style: italic;
         }
+        /* Feito por mim e pesquisando para centralizar a imagem */
+        .gojo {
+            display: block;   /* Transforma em bloco para aceitar margens laterais / Pesquisado */
+            margin: 0 auto;   /* O 'auto' nas laterais empurra a imagem para o meio / Pesquisado */ 
+            width: 100%;
+            max-width: 350px;
+            height: auto;
+            border: 2px solid #000;
+}
+
     </style>
 </head>
 <body>
@@ -69,7 +79,7 @@
         <section>
             <h2>Um exemplo de Imagem</h2>
             <figure>
-                <img src="https://i.redd.it/6v9jcii5wu8c1.jpeg" alt="Gojo burro">
+                <img src="https://i.redd.it/6v9jcii5wu8c1.jpeg", class="gojo", alt="Gojo burro">
                 <figcaption>Figura 1: exemplo de uma imagem com legenda estruturada corretamente no HTML5</figcaption>
             </figure>
         </section>

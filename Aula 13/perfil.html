@@ -84,17 +84,35 @@
     <div class="cartao">
         <h3>PERFIL DO DESENVOLVEDOR</h3>
         <p>Nome: <span id="cartao-nome" class="destaque">????</span></p>
-        <p>Linguagem: <span id="catao-linguagem" class="destaque">????</span></p>
+        <p>Linguagem: <span id="cartao-linguagem" class="destaque">????</span></p>
     </div>
 
     <script>
 
+        //1. Aqui nós declaramos a condição pro JS agir
         let botao = document.getElementById("btn-registrar");
 
+        // Aqui é o que ele vai receber
         let campoNome = document.getElementById("input-nome");
         let campoLinguagem = document.getElementById("input-linguagem");
 
-        let spanNome
+        // Aqui é o que ele vai preencher
+        let spanNome = document.getElementById("cartao-nome");
+        let spanLinguagem = document.getElementById("cartao-linguagem");
+
+        //2. Declarando o que ele vai fazer quando a condição for ativada
+        botao.addEventListener("click", function() {
+
+            let nomeDigitado = campoNome.value;
+            let linguagemDigitada = campoLinguagem.value;
+
+            spanNome.innerText = nomeDigitado;
+            spanLinguagem.innerText = linguagemDigitada;
+
+            campoNome.value = null;
+            campoLinguagem.value = null;
+        
+        });
     </script>
 </body>
 </html>
